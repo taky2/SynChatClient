@@ -31,6 +31,8 @@ public class Client  {
      *
      * In console mode, if an error occurs the program simply stops
      * when a GUI id used, the GUI is informed of the disconnection
+     *
+     * TODO: Update client and server apps to support CLI (console-mode)
      */
     public static void main(String[] args) {
         int portNumber = 8700;
@@ -195,7 +197,6 @@ public class Client  {
 
     }
 
-
     /** wait for message from the server, append to JTextArea (console or GUI) **/
     class ListenerThread extends Thread {
         public void run() {
@@ -224,4 +225,4 @@ public class Client  {
             }
         }
     }
-}
+} // end Client class
